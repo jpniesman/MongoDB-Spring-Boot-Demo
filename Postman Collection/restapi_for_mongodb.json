@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "480dbd5c-7922-4b8d-995a-80a7913d42da",
+		"name": "MongoDB Spring Boot Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Welcome",
+			"id": "0d53b58d-e81b-48b9-9316-d72bf31ca139",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"id": "7689de78-534c-4583-9d92-f59c8d4be022",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john.doe@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/save"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"id": "68251860-1302-40c3-bbf2-04ceb07268ca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"newEmail@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/update/id"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"id": "1f313bdf-c594-4ef0-9164-d9552f1a83e2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/delete/id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"id": "2c94cf4d-b73c-46dc-a289-8457f12551ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/users"
+			},
+			"response": []
+		}
+	]
+}
