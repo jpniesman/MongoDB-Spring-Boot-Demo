@@ -25,3 +25,5 @@ replay_pid*
 
 # Additional Files
 .DS_Store
+.idea/
+target/
